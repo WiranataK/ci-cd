@@ -1,5 +1,5 @@
 # using this awesome prebuild images:
-FROM '123majumundur/php-7.1-nginx:cicd'
+FROM 'wiranatak/ci-cd:cicd'
 LABEL maintainer="wiranatak99@gmail.com"
 
 # install prestissimo for faster deps installation
@@ -14,6 +14,6 @@ COPY --chown=app:root . ./
 
 # finish composer
 # RUN composer dump-autoload
-RUN composer dump-autoload --no-script --no-dev --optimize
+RUN composer dump-autoload --no-scripts --no-dev --optimize
 
 EXPOSE 8080
