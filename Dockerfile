@@ -1,5 +1,5 @@
 # using this awesome prebuild images:
-FROM 'WiranataK/ci-cd:ci-cd'
+FROM 'wiranatak/ci-cd:ci-cd'
 MAINTAINER Anak Agung Gede Wiranata Kencana <wiranatak99@gmail.com>
 
 # install prestissimo for faster deps installation
