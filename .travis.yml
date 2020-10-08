@@ -33,7 +33,7 @@ jobs:
         name: "Build Images Docker"
         script:
         - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-        - docker build -t 1301174187/ci-cd .
+        - docker build -t travis-ci-build-stages-demo .
         - docker images
-        - docker tag 1301174187/ci-cd $DOCKER_USERNAME/ci-cd
+        - docker tag travis-ci-build-stages-demo $DOCKER_USERNAME/ci-cd
         - docker push $DOCKER_USERNAME/ci-cd
