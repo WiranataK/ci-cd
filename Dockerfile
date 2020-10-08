@@ -1,5 +1,5 @@
 # using this awesome prebuild images:
-FROM '1301174187/php-7.1-nginx:cicd'
+FROM '1301174187/ci-cd:cicd'
 MAINTAINER Anak Agung Gede Wiranata Kencana <wiranatak99@gmail.com>
 
 # install prestissimo for faster deps installation
